@@ -1,0 +1,10 @@
+.intro__container{
+    display: flex;
+    max-width: 50vw;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    position: relative;
+    min-width: 900px;
+    height: 100%;
+}

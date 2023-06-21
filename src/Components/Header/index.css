@@ -1,0 +1,37 @@
+.header__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: end;
+    background: linear-gradient(to bottom, white 92%, #50a3a4 100%);
+    position: fixed
+}
+
+#logo{
+    transform: scale(0.95);
+}
+
+.header__menu-container{
+    align-self: end;
+    margin-bottom: 5px;
+}
+
+.header__menu-item{
+    margin-left: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    color:black;
+    cursor: pointer;
+    transition: top 0.5s ease, color 0.3s ease;
+    text-decoration: none;
+
+}
+
+.header__menu-item:hover{
+    position: relative;
+    top: -0.2rem;
+    color:rgb(37, 162, 193)
+
+}

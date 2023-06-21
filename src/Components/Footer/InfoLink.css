@@ -1,0 +1,12 @@
+.info-link__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 14rem;
+    align-items: center;
+}
+
+.info-link__title{
+   display: inline;
+   font-weight: 700;
+}
