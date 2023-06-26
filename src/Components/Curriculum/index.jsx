@@ -4,6 +4,7 @@ import "./index.css";
 import Header from "../Header";
 import CurriculumCard from "./CurriculumCard";
 
+
 function Curriculum() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
@@ -16,10 +17,20 @@ function Curriculum() {
           </div>
           <CurriculumCard
             title={"Full Stack developer - Senpay Academy"}
-            image={"logo-senpaiAcademy.webp"}
+            image={"SenpaiLogo.png"}
             period={"15/02/2023 - 15/08/2023"}
             textContainer={"display-none"}
-            listItems={}
+            list={<ul>
+                    <li>Pensamiento Computacional</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javaScript</li>
+                    <li>React</li>
+                    <li>GitHub</li>
+                    <li>PostgreSQL</li>
+                    <li>Node js </li>
+  
+                  </ul>}
           />
         </div>
       </div>

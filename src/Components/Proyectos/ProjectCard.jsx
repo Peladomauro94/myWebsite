@@ -4,7 +4,7 @@ import "./ProjectCard.css";
 function ProyectosCard({ image, title, date, description }) {
   return (
     <>
-      <Card shadow="lg" padding="lg" radius="md" withBorder className='proyectos__card'>
+      <Card shadow="lg" padding="lg" radius="md"  className='proyectos__card'>
         <Card.Section component="a" href="https://mantine.dev/">
           <Image
             src={image}
@@ -13,13 +13,13 @@ function ProyectosCard({ image, title, date, description }) {
         </Card.Section>
 
         <Group position="apart" mt="md" mb="xs">
-          <Text weight={700}>{title}</Text>
+          <Text weight={700} size={20}>{title}</Text>
           <Badge variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
             {date}
           </Badge>
         </Group>
 
-        <Text size="sm" color="dimmed">
+        <Text size="sm" color="white">
           {description}
         </Text>
 

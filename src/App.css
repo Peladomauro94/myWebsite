@@ -30,3 +30,19 @@
   opacity: .8;
   z-index: -1;
 }
+
+#pages__background-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-image: url(/proyectos-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+

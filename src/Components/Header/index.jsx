@@ -10,7 +10,7 @@ function Header() {
         <img id="logo" src="\Logo_final-removebg-preview.png" alt="Logo" />
         <div className="header__menu-container">
             <Link to="/" className="header__menu-item">Sobre Mi</Link>
-            <Link className="header__menu-item">Tecnologías</Link>
+            <Link to="/curriculum" className="header__menu-item">Currículum</Link>
             <Link to="/proyectos" className="header__menu-item">Proyectos</Link>
             <Link className="header__menu-item">Contacto</Link>
         </div>

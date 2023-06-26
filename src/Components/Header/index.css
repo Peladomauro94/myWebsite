@@ -4,7 +4,8 @@
     justify-content: space-evenly;
     text-align: end;
     background: linear-gradient(to bottom, rgba(41, 208, 245, 0.976) 10%, #1fa1a3 100%);
-    position: fixed
+    position: fixed;
+    z-index: 1;
 }
 
 #logo{
