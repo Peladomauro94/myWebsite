@@ -3,7 +3,9 @@ div > .curriculum__total-div{
     
 }
 
-
+#pages__background-image{
+    width: 100vw;
+}
 
 .curriculum__cards-div{
     display: flex;
@@ -13,17 +15,24 @@ div > .curriculum__total-div{
     position: relative;
     margin-top: 12rem;
     z-index: 0;
+    
 }
 
 .curriculum__title-div{
-    background-color: rgb(155, 193, 227);
+    background-color: rgba(22, 129, 223, 0.939);
     width: 100%;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 2rem;
+    color: aliceblue;
 }
 
 .curriculum__title{
     padding-left: 2rem;
     margin: 0;
+}
+
+.curriculum__list-item{
+    margin-bottom: 0.3rem;
+    
 }

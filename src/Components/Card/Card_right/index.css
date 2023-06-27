@@ -37,6 +37,10 @@
 
 a{
     text-decoration: none;
+    color: white
+  }
+
+.card-right__button-link {
     color: rgb(13, 113, 228);
   }
 

@@ -3,8 +3,8 @@
     width: 100%;
     margin-bottom: 3rem;
     display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.7rem;
     border-radius: 20px;
 }
 
@@ -45,10 +45,15 @@
     margin: 0px;
     margin-right: 1.5rem;
     color: white;
+    font-size: 1.5rem;
 }
 
 .curriculum__card-span{
-    align-self: center;
+    align-self: start;
+    font-size: 16px;
+    text-align: end;
+    padding-top: 0.5rem;
+    
 }
 
 .curriculum__card-text{
@@ -59,6 +64,18 @@
     display: none;
 }
 
+.curriculum__text{
+    margin-top: 0.5rem;
+    
+}
+
 .curriculum__card-text-div > p {
     margin-bottom: 0px;
+    margin-top: 0px;
+    padding-right: 3rem;
+}
+
+div > p > b{
+    font-size: 20px;
+    
 }
