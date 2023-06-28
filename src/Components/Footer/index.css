@@ -1,13 +1,6 @@
-.footer__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    align-self: end;
-    margin: 0;
-    width: 100%;
-}
 
-.footer__links{
+
+.footer__cards-links{
     display: flex;
 }
 
