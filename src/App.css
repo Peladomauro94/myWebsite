@@ -45,4 +45,15 @@
   background-position: center;
 }
 
+.footer-home__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  align-self: end;
+  margin: 0;
+  width: 100%;
+}
+
+
+
 

@@ -15,7 +15,7 @@ function App() {
           <div className='app__container'>
             <Card /> 
           </div>
-        <Footer />
+        <Footer type="footer-home__container"/>
       </div>
 
     </MantineProvider>

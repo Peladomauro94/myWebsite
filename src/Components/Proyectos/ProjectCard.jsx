@@ -13,7 +13,7 @@ function ProyectosCard({ image, title, date, description }) {
         </Card.Section>
 
         <Group position="apart" mt="md" mb="xs">
-          <Text weight={700} size={20}>{title}</Text>
+          <Text weight={700} size={20} color="white">{title}</Text>
           <Badge variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
             {date}
           </Badge>

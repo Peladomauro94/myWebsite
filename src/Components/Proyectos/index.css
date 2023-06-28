@@ -1,6 +1,18 @@
-div > .proyectos__total-div{
-    justify-content: center;
+.proyectos__total-div{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
     
+}
+
+.proyectos__main-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .proyectos__cards-div{
@@ -8,5 +20,18 @@ div > .proyectos__total-div{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
-    align-self: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 13rem;
+    margin-bottom: 3rem;
+    height: 100%;
 }
+
+.footer-pages__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(9, 162, 197, 0.976) 20%, #20d0d3 100%);
+  }
