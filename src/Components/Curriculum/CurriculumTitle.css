@@ -1,0 +1,15 @@
+.curriculum__title-div{
+    background-color: rgba(22, 129, 223, 0.939);
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 2rem;
+    color: aliceblue;
+}
+
+.curriculum__title{
+    padding-left: 2rem;
+    margin: 0;
+    display: block;
+    white-space: nowrap;
+}

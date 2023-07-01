@@ -12,7 +12,7 @@ function Header() {
             <Link to="/" className="header__menu-item">Sobre Mi</Link>
             <Link to="/curriculum" className="header__menu-item">Currículum</Link>
             <Link to="/proyectos" className="header__menu-item">Proyectos</Link>
-            <Link className="header__menu-item">Contacto</Link>
+            <Link to="/contacto" className="header__menu-item">Contacto</Link>
         </div>
     </Container>
   );

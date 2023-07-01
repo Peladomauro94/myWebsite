@@ -31,8 +31,21 @@
 }
 
 
-.card-right__button{
+.card-right__button-right{
     margin-left: 2rem;
+    border: solid 2px #3498a7e5;
+}
+
+.card-right__button-right:hover{
+    background-color: rgba(41, 40, 40, 0.117);
+}
+
+.card-right__button-left{
+    background-color: #34b3c6;
+}
+
+.card-right__button-left:hover{
+    background-color: #39d6eee5;
 }
 
 a{
@@ -41,7 +54,8 @@ a{
   }
 
 .card-right__button-link {
-    color: rgb(13, 113, 228);
+    color: #3498a7e5;
+    font-weight: 700;
   }
 
 

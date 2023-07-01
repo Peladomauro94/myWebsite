@@ -1,4 +1,4 @@
-.curriculum__card-div{
+#curriculum__card-div{
     background-color: #269aaced;
     width: 100%;
     margin-bottom: 3rem;
@@ -6,7 +6,10 @@
     padding-top: 1.5rem;
     padding-bottom: 1.7rem;
     border-radius: 20px;
+
 }
+
+
 
 
 .cirriculum__card-image-div{

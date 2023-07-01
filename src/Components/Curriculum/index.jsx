@@ -17,6 +17,7 @@ function Curriculum() {
       <li className="curriculum__list-item">GitHub.</li>
       <li className="curriculum__list-item">PostgreSQL.</li>
       <li className="curriculum__list-item">Node js.</li>
+      <li className="curriculum__list-item">Express</li>
     </ul>
   );
 
@@ -89,7 +90,7 @@ function Curriculum() {
             textContainer={"curriculum__text"}
             list={senpaiList}
             text={
-              "En Senpai Academy cursé el bootcamp de Full Stack developer que constó de un total de 500 horas de clase, las cuales estuvieron compuestas de clases tehóricas, prácticas, talleres de habilidades blandas y metodologías ágiles. En el desarrollo del curso se trabajaron los lenguajes antes mencionados, la implementación de librerías css, creación de API's y su integraión en proyectos, al igual que la creación y utilización de bases de datos."
+              "En Senpai Academy cursé el bootcamp de Full Stack developer que constó de más de 500 horas de clase, las cuales estuvieron compuestas de clases tehóricas, prácticas, talleres de habilidades blandas y metodologías ágiles. En el desarrollo del curso se trabajaron los lenguajes antes mencionados, la implementación de librerías css, creación de API's y su integraión en proyectos, al igual que la creación y utilización de bases de datos."
             }
           />
 

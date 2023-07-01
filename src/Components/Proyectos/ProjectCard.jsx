@@ -5,7 +5,7 @@ function ProyectosCard({ image, title, date, description }) {
   return (
     <>
       <Card shadow="lg" padding="lg" radius="md"  className='proyectos__card'>
-        <Card.Section component="a" href="https://mantine.dev/">
+        <Card.Section>
           <Image
             src={image}
             height={320}

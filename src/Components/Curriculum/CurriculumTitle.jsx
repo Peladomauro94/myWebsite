@@ -1,4 +1,5 @@
 import React from "react";
+import "./CurriculumTitle.css";
 
 function CurriculumTitle({ title }) {
   return (
