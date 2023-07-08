@@ -1,4 +1,7 @@
 .card-right__container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 50%;
     height: 100%;
     text-align: center;
@@ -6,22 +9,50 @@
     padding-right: 2.1rem;
     padding-bottom: 2.5rem;
     border-bottom-right-radius: 10% ;
-    background-color: rgba(26, 24, 24, 0.065);
+    background-color: rgb(247, 247, 247);
 }
 
 .card-right__title{
+    position: relative; 
     margin-top: 1.5rem;
     text-align: center;
     margin-bottom: 0rem;
     font-weight: 700;
     font-size: 50px;
+    display: inline;
 }
 
 .card-right__subtitle{
+    position: relative; 
     font-weight: 400;
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 1rem;
+    display: inline;
+}
+
+h1 span {
+    position:absolute;
+    margin-right: -1rem;
+    right:0;
+    width:0;
+    background: rgb(247, 247, 247);
+    border-left: 1px solid #000;
+    animation: escribir 4s steps(12) alternate;
+}
+
+h3 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: rgb(247, 247, 247);
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
 }
 
 .card-right__text{

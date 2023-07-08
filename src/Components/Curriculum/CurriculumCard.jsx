@@ -1,26 +1,34 @@
 import "./CurriculumCard.css";
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 
 function CurriculumCard({ period, image, title, text, conocimientos, list, textContainer}) {
 
   const [isVisible, setIsVisible] = useState(false)
+  
+  const [isIntersecting, setIsIntersecting] = useState(false)
+  const elementoRef = useRef();
+  useEffect(() =>{
+    const elemento = elementoRef.current;
 
-  /*useEffect(() =>{
-    const handleScroll = () =>{   
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const element = document.getElementById("curriculum__card-div");
-     console.log(element)
-      if (element && scrollPosition > element.offsetTop - windowHeight / 2) {
-        setIsVisible(true)
-      }
+    const observer = new IntersectionObserver(entries =>{
+      entries.forEach(entry =>{
+        setIsIntersecting(entry.isIntersecting);
+      })
+    },{
+      threshold:0.25
+    })
+
+    if (elemento) {
+      observer.observe(elemento)
+    }
+  }, [])
 
 
 
 
 
   return (
-    <div id="curriculum__card-div" className={`${isVisible ? "is-visible" : ""}`}>
+    <div id="curriculum__card-div" className={isIntersecting ? "mostrar" : "hidden"} ref={elementoRef}>
         <div className="cirriculum__card-image-div">
             <img className="cirriculum__card-image" src={image} alt="" />
         </div>

@@ -1,7 +1,8 @@
 import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 import "./ProjectCard.css";
+import { Link } from 'react-router-dom';
 
-function ProyectosCard({ image, title, date, description }) {
+function ProyectosCard({ image, title, date, description, linkTo }) {
   return (
     <>
       <Card shadow="lg" padding="lg" radius="md"  className='proyectos__card'>
@@ -22,10 +23,12 @@ function ProyectosCard({ image, title, date, description }) {
         <Text size="sm" color="white">
           {description}
         </Text>
-
+        <Link to={linkTo}>        
         <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }} fullWidth mt="md" radius="md" className='proyectos__card-buttton'>
           Ir a la página
         </Button>
+        </Link>
+
       </Card>
     </>
   );

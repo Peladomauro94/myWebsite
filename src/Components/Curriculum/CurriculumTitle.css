@@ -5,6 +5,26 @@
     padding: 5px;
     margin-bottom: 2rem;
     color: aliceblue;
+    position: relative;
+}
+
+.hidden-title{
+    right: -50vw;
+    animation: ocultartitulo 3s alternate;
+}
+
+@keyframes ocultartitulo {
+    0% {opacity: 1}
+    100% {opacity:0}
+}
+
+.mostrar-title{
+    animation: mostrartitulo 1.2s ease;
+}
+
+@keyframes mostrartitulo {
+    0% {right: -50vw; opacity:0}
+    100% {right: 0; opacity:1}
 }
 
 .curriculum__title{

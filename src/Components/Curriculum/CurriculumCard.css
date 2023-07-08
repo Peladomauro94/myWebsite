@@ -6,7 +6,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.7rem;
     border-radius: 20px;
-
+    position: relative;
 }
 
 
@@ -81,4 +81,26 @@
 div > p > b{
     font-size: 20px;
     
+}
+
+.hidden{
+    
+    opacity: 0;
+    animation: ocultarse 1.2s alternate;
+}
+
+@keyframes ocultarse {
+    0% {opacity: 1}
+    100% {opacity:0}
+}
+
+.mostrar{
+    transform: scale(1);
+    opacity: 1;
+    animation: mostrarse 1.2s alternate
+}
+
+@keyframes mostrarse {
+    0% {opacity: 0}
+    100% {opacity:1}
 }

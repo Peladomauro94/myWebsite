@@ -7,6 +7,8 @@ import CurriculumTitle from "./CurriculumTitle";
 import Footer from "../Footer";
 
 function Curriculum() {
+
+  
   const senpaiList = (
     <ul>
       <li className="curriculum__list-item">Pensamiento Computacional.</li>
