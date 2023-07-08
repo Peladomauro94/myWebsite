@@ -14,14 +14,9 @@ function CurriculumCard({ period, image, title, text, conocimientos, list, textC
       if (element && scrollPosition > element.offsetTop - windowHeight / 2) {
         setIsVisible(true)
       }
-    };
-    
-    window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  },[])*/
+
+
 
 
   return (
