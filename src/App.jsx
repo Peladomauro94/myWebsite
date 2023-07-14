@@ -1,4 +1,4 @@
-import {  MantineProvider } from '@mantine/core';
+import {   MantineProvider } from '@mantine/core';
 import './App.css'
 import Header from './Components/Header';
 import Card from './Components/Card';
@@ -9,13 +9,12 @@ function App() {
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
+      <Header/>
+      
       <div className="total-div">
-        <div className='background-image'></div>
-        <Header />
-          <div className='app__container'>
-            <Card /> 
-          </div>
-        <Footer type="footer-home__container"/>
+        <div id="background-image-main"></div>
+        <Card />
+        <Footer />
       </div>
 
     </MantineProvider>

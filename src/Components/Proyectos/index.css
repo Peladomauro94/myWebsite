@@ -1,37 +1,51 @@
-.proyectos__total-div{
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-
-    
-}
-
 .proyectos__main-div{
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: center;
-    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-family: 'Play', sans-serif;
+   
 }
 
 .proyectos__cards-div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     position: relative;
-    margin-top: 13rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;
-    height: 100%;
+    
 }
 
-.footer-pages__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
+#background-image{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: linear-gradient(to top, rgba(9, 162, 197, 0.976) 20%, #20d0d3 100%);
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-image: url('/background-mobile-components.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
+
+  @media (min-width:750px){
+    #background-image{
+        background-image: url('/pxfuel.jpg');
+    }
+
+  }
+
+  @media (min-width:850px){
+
+    .proyectos__cards-div{
+        flex-direction: row;
+        margin-top: 8rem;
+    }
+  }
+

@@ -1,6 +1,29 @@
-
-
 .footer__cards-links{
+    width: 100vw;
     display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(9, 162, 197, 0.976) 70%, #20d0d3 100%);
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
 }
 
+@media (min-width:750px){
+    .footer__main-div{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .footer__cards-links{
+        width: 100vw;
+        display: flex;
+        text-align: end;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 1.2rem;
+        padding-bottom: 0.3rem;
+        padding-right: 1rem;
+    }
+}

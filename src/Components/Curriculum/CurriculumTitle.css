@@ -1,15 +1,17 @@
 .curriculum__title-div{
     background-color: rgba(22, 129, 223, 0.939);
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 2rem;
     color: aliceblue;
     position: relative;
+    max-width: 940px;
+    font-family: 'Play', sans-serif;
 }
 
-.hidden-title{
-    right: -50vw;
+.hidden-title-div{
+    right: 0vw;
     animation: ocultartitulo 3s alternate;
 }
 
@@ -19,12 +21,12 @@
 }
 
 .mostrar-title{
-    animation: mostrartitulo 1.2s ease;
+    animation: mostrartitulo 1.0s ease;
 }
 
 @keyframes mostrartitulo {
-    0% {right: -50vw; opacity:0}
-    100% {right: 0; opacity:1}
+    0% {top: -5vh; opacity:0}
+    100% {top: 0; opacity:1}
 }
 
 .curriculum__title{

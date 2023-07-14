@@ -1,4 +1,3 @@
-import { Container } from "@mantine/core";
 import React from "react";
 import "./index.css";
 import InfoLink from "./InfoLink";
@@ -24,14 +23,13 @@ function Footer({ type }) {
 
 
   return (
-    <Container className={ type } size="fluid" style={{ height: "5rem"}}>
-        <img src="" alt="" />    
+    <div className="footer__main-div" >   
         <div className="footer__cards-links">
             <InfoLink title="Teléfono" data="+598091-301-134" onClick={numberHandleClick} nameClass={"display-none"}/>
             <InfoLink title="E-mail" data="mauroadroher@gmail.com" onClick={emailHandleClick} nameClass={"display-none"}/>
             <InfoLink title="Seguíme" image={"/Linkedin-text.png"} onClick={linkedInHandleClick} nameClass={"info-link__image"}/>
         </div>
-    </Container>
+    </div>
   );
 }
 

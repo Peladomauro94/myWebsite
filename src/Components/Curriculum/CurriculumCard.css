@@ -1,18 +1,19 @@
 #curriculum__card-div{
     background-color: #269aaced;
-    width: 100%;
+    width: 90%;
     margin-bottom: 3rem;
     display: flex;
     padding-top: 1.5rem;
     padding-bottom: 1.7rem;
     border-radius: 20px;
     position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 940px;
 }
 
-
-
-
 .cirriculum__card-image-div{
+    display: none;
     width: 15%;
     align-self: flex-start;
     text-align: center;
@@ -30,30 +31,30 @@
 
 .curriculum__card-title-div{
     display: flex;
+    flex-direction: column;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    margin-right: 1rem;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .curriculum__card-text-div{
     display: flex;
     flex-direction: column;
-    width: 85%;
-    padding-right: 1.5rem;
+    width: 100%;
     
 }
 
 .curriculum__card-title{
     margin: 0px;
-    margin-right: 1.5rem;
+    align-self: center;
     color: white;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .curriculum__card-span{
     align-self: start;
-    font-size: 16px;
+    font-size: 14px;
     text-align: end;
     padding-top: 0.5rem;
     
@@ -67,16 +68,15 @@
     display: none;
 }
 
-.curriculum__text{
+ p.curriculum__text{
+    display: inline;
+    padding: 0px;
+    align-self: center;
+    text-align: center;
     margin-top: 0.5rem;
     
 }
 
-.curriculum__card-text-div > p {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-right: 3rem;
-}
 
 div > p > b{
     font-size: 20px;
@@ -103,4 +103,35 @@ div > p > b{
 @keyframes mostrarse {
     0% {opacity: 0}
     100% {opacity:1}
+}
+
+@media (min-width:650px){
+    .cirriculum__card-image-div{
+        display: initial;
+    }
+
+    .curriculum__card-title-div{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .curriculum__card-title{
+        margin-top: 0.8rem;
+        margin-left: 0rem;
+        align-self: flex-start;
+        text-align: start;
+    }
+    .curriculum__card-span{
+        align-self: end;
+        
+    }
+
+    .cirriculum__card-image-div{
+        padding-top: 3%;
+    }
+
+    p.curriculum__text{
+        text-align: start;
+        
+    }
 }

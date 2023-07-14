@@ -34,7 +34,7 @@ function CurriculumCard({ period, image, title, text, conocimientos, list, textC
         </div>
         <div className="curriculum__card-text-div">
           <div className="curriculum__card-title-div">
-            <h2 className="curriculum__card-title">{title}</h2><span className="curriculum__card-span"><b>Período:</b> {period}</span>
+            <h2 className="curriculum__card-title" translate="no">{title}</h2><span className="curriculum__card-span"><b>Período:</b> {period}</span>
           </div>
             <p className={conocimientos}><b>Conocimientos adquiridos:</b></p>
             {list}

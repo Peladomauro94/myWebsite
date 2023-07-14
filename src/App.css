@@ -1,58 +1,42 @@
-.app__container{
-  box-sizing: border-box;
-  min-width: 50vw;
-  height: 600px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-
-}
-
 .total-div{
-  width: 100%;
-  display: flex;
-  height: 100vh;
-  position: relative;
-  font-family: 'Play', sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/fondo.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(226, 226, 226);
+    font-family: 'Play', sans-serif;
 }
 
-
-.background-image{
-  background-image: url("/fondo.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: .8;
-  z-index: -1;
+@media ( min-width:550px ){
+    .total-div{
+        background-size: contain;
+    }
 }
 
-#pages__background-image{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  background-image: url(/pxfuel.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@media ( min-width:750px ){
+    .total-div{
+        height: 100vh;
+        background-image: none;
+        background-color: transparent;
+    }
+
+    #background-image-main{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            background-image: url('/fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;  
+    }
 }
 
-.footer-home__container{
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  align-self: end;
-  margin: 0;
-  width: 100%;
-}
 
 
 

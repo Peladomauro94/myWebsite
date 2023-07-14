@@ -1,0 +1,141 @@
+.card-right__container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 2rem;
+}
+
+.card-right__title{
+    position: relative; 
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    font-weight: 700;
+    font-size: 50px;
+    display: inline;
+}
+
+h1 span {
+    position:absolute;
+    margin-right: -1rem;
+    right:0;
+    width:0;
+    background: rgb(226, 226, 226);
+    border-left: 1px solid #000;
+    animation: escribir 4s steps(12) alternate;
+}
+
+.card-right__subtitle{
+    position: relative; 
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline;
+}
+
+h3 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: rgb(226, 226, 226);
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+.card-right__text{
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+}
+
+.card-right__button-right{
+    margin-left: 2rem;
+    border: solid 2px #3498a7e5;
+    font-family: 'Play', sans-serif;
+}
+
+.card-right__button-right:hover{
+    background-color: rgba(41, 40, 40, 0.117);
+}
+
+.card-right__button-left{
+    font-family: 'Play', sans-serif;
+    background-color: #34b3c6;
+}
+
+.card-right__button-left:hover{
+    background-color: #39d6eee5;
+}
+
+a{
+    text-decoration: none;
+    color: white
+  }
+
+.card-right__button-link {
+    color: #3498a7e5;
+    font-weight: 700;
+  }
+
+@media (min-width:750px){
+    .card-right__container{
+        display: flex;
+        max-width: 27rem;
+        align-self: center;
+        position: relative;
+        background-color: rgb(226, 226, 226);
+        width: 50%;
+        border-bottom-right-radius: 10%;
+        height: 70vh;
+        max-height: 34rem;
+    }
+
+    .card-right__text{
+        font-size: 15px;
+    }
+
+    .card-right__title{
+        margin-top: 1rem;
+        font-size: 40px;
+        
+    }
+
+    .card-right__subtitle{
+        font-size: 18px;
+        margin-top: 0.5rem;
+    }
+    .card-right__button-right{
+        transform: scale(0.9);
+    }
+    
+    .card-right__button-left{
+        transform: scale(0.9);
+    }
+}
+
+@media (min-width:850px){
+    .card-right__title{
+        margin-top: 0.7rem;
+        font-size: 50px;
+        
+    }
+
+    .card-right__subtitle{
+        font-size: 20px;
+        margin-top: 0.0rem;
+    }
+
+    .card-right__text{
+        font-size: 17px;
+        margin-top: 1vh;
+    }
+}

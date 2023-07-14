@@ -6,12 +6,9 @@ function Card_left() {
   return (
     <div className="card-left__container">
         <div className="card-left__top-container">
-          <div className="card-left__top">
-          <img id="card-left__image" src="\Diseño sin título.jpg" />
+            <img id="card-left__image" src="\Diseño sin título.jpg" />
             <span className="card-left__name">Mauro Adroher</span>
-            <span className="card-left__profesion">Full Stack Developer</span>
-          </div>
-
+            <span className="card-left__profesion">Full Stack Developer</span>  
         </div>
         <div className="card-left__bottom">
             <Link to={"https://www.linkedin.com/in/mauro-adroher-golfarini-ba0b1b1a2/"} ><img className="card-left__links" src="\imgbin_linkedin-png.png" alt="" /></Link>
@@ -22,4 +19,3 @@ function Card_left() {
 }
 
 export default Card_left;
-

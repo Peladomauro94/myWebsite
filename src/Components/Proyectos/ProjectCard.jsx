@@ -14,7 +14,7 @@ function ProyectosCard({ image, title, date, description, linkTo }) {
         </Card.Section>
 
         <Group position="apart" mt="md" mb="xs">
-          <Text weight={700} size={20} color="white">{title}</Text>
+          <Text weight={700} size={20} color="white" translate="no" className='proyectos__card-text-style'>{title}</Text>
           <Badge variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
             {date}
           </Badge>
@@ -24,7 +24,7 @@ function ProyectosCard({ image, title, date, description, linkTo }) {
           {description}
         </Text>
         <Link to={linkTo}>        
-        <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }} fullWidth mt="md" radius="md" className='proyectos__card-buttton'>
+        <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }} fullWidth mt="md" radius="md" className='proyectos__card-buttton proyectos__card-text-style'>
           Ir a la página
         </Button>
         </Link>

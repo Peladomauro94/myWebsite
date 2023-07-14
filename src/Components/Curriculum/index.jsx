@@ -36,7 +36,7 @@ function Curriculum() {
   const surList = (
     <ul>
       <li className="curriculum__list-item">Generación de informes semanales y mensuales.</li>
-      <li className="curriculum__list-item">Gestión y organización de horirios.</li>
+      <li className="curriculum__list-item">Gestión y organización de horarios.</li>
       <li className="curriculum__list-item">Resolución de problemas.</li>
       <li className="curriculum__list-item">Capacidad de adaptación.</li>
       <li className="curriculum__list-item">Liderar equipos de trabajo.</li>
@@ -52,9 +52,9 @@ function Curriculum() {
       <li className="curriculum__list-item">Organización visual y merchandising.</li>
       <li className="curriculum__list-item">Coordinación y liderazgo.</li>
       <li className="curriculum__list-item">Análisis de indicadores de ventas.</li>
-      <li className="curriculum__list-item">Reportes y comunicación de los resultados obtenidos en base a las metas asignadas.</li>
+      <li className="curriculum__list-item">Reportes y comunicación de los resultados obtenidos en relación con las metas asignadas.</li>
       <li className="curriculum__list-item">Capacitación del personal a cargo.</li>
-      <li className="curriculum__list-item">Resolición de problemas.</li>
+      <li className="curriculum__list-item">Resolución de problemas.</li>
       <li className="curriculum__list-item">Control y arqueo de caja.</li>
       <li className="curriculum__list-item">Manejos de sistemas y tecnologías utilizadas en el ámbito de ventas.</li>
 
@@ -78,9 +78,9 @@ function Curriculum() {
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <div className="total-div curriculum__total-div">
+      
         <Header />
-        <div id="pages__background-image"></div>
+        <div id="background-image"></div>
         <div className="curriculum__cards-div">
 
           <CurriculumTitle title="Estudios"/>
@@ -92,7 +92,7 @@ function Curriculum() {
             textContainer={"curriculum__text"}
             list={senpaiList}
             text={
-              "En Senpai Academy cursé el bootcamp de Full Stack developer que constó de más de 500 horas de clase, las cuales estuvieron compuestas de clases tehóricas, prácticas, talleres de habilidades blandas y metodologías ágiles. En el desarrollo del curso se trabajaron los lenguajes antes mencionados, la implementación de librerías css, creación de API's y su integraión en proyectos, al igual que la creación y utilización de bases de datos."
+              "En Senpai Academy cursé el bootcamp de Full Stack developer que constó en más de 500 horas de clase, las cuales estuvieron compuestas de clases teóricas, prácticas, talleres de habilidades blandas y metodologías ágiles. En el desarrollo del curso se trabajaron los lenguajes antes mencionados, la implementación de librerías css, creación de API's y su integración en proyectos, al igual que la creación y utilización de bases de datos."
             }
           />
 
@@ -106,7 +106,7 @@ function Curriculum() {
             textContainer={"curriculum__text"}
             list={ibecList}
             text={
-              "En IBEC Institute realicé el curso de Digital Marketing, en él trabajamos el entendimiento de los nuevos medios y en particular del consumidor moderno. También trabajamos en el desarrollo de una planificación estratégica exitosa de Digital Marketing, desde la investigacion previa hasta la ejecución, desarrollo y evaluación de acciones."
+              "En IBEC Institute realicé el curso de Digital Marketing, en él trabajamos el entendimiento de los nuevos medios y en particular del consumidor moderno. También trabajamos en el desarrollo de una planificación estratégica exitosa de Digital Marketing, desde la investigación previa hasta la ejecución, desarrollo y evaluación de acciones."
             }
           />
 
@@ -135,7 +135,7 @@ function Curriculum() {
             textContainer={"curriculum__text"}
             list={freelanceList}
             text={
-              "En mi rol de Content creator & Community Manager, estoy encargado de crear y mantener la presencia de la empresa en diferentes plataformas de redes sociales, como Instagram o Facebook. Publicar contenido relevante y atractivo, a comentarios y mensajes, y mantener una interacción constante con la audiencia. Tamén me encargo  de desarrollar y ejecutar estrategias de contenido para las redes sociales, incluyendo la planificación de publicaciones como la creación de contenido original. Otra  de mis competencias es la creación y gestión de campañas publicitarias en las RRSS para aumentar la visibilidad y el alcance de la empresa."
+              "En mi rol de Content creator & Community Manager, estoy encargado de crear y mantener la presencia de la empresa en diferentes plataformas de redes sociales, como Instagram o Facebook. Publicar contenido relevante y atractivo, a comentarios y mensajes, y mantener una interacción constante con la audiencia. También me encargo  de desarrollar y ejecutar estrategias de contenido para las redes sociales, incluyendo la planificación de publicaciones como la creación de contenido original. Otra  de mis competencias es la creación y gestión de campañas publicitarias en las RRSS para aumentar la visibilidad y el alcance de la empresa."
             } />
 
             <CurriculumCard
@@ -147,12 +147,12 @@ function Curriculum() {
             textContainer={"curriculum__text"}
             list={umbroList}
             text={
-              "En mi puesto como Store Manager en Umbro Uruguay, fuí responsable de supervisar y dirigír al equipo de trabajo, estableciendo metas y brindando capacitación. También llevaba a cabo evaluaciones periódicas de desempeño, fomentando un ambiente motivador y apoyando el crecimiento profesional del equipo. A su vez, realizaba el seguimiento constante de los indicadores clave de rendimiento, como volumen de ventas, rentabilidad y rotación de inventario, utilizando esta información para tomar decisiones estratégicas y mejorar los resultados. Teniendo que reporar los mismos de manera semanal y mensualmente al directorio"
+              "En mi puesto como Store Manager en Umbro Uruguay, fui responsable de supervisar y dirigir al equipo de trabajo, estableciendo metas y brindando capacitación. También llevaba a cabo evaluaciones periódicas de desempeño, fomentando un ambiente motivador y apoyando el crecimiento profesional del equipo. A su vez, realizaba el seguimiento constante de los indicadores clave de rendimiento, como volumen de ventas, rentabilidad y rotación de inventario, utilizando esta información para tomar decisiones estratégicas y mejorar los resultados. Teniendo que reportar los mismos de manera semanal y mensualmente al directorio"
             }     
             />
         </div>
-        <Footer type="footer-pages__container" />
-      </div>
+        <Footer />
+      
     </MantineProvider>
   );
 }

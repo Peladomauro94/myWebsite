@@ -1,0 +1,113 @@
+.card-left__container{
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 22rem;
+    border-top-left-radius: 10%;
+    background-color: #269aacb1;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.card-left__top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#card-left__image{
+    width: 9rem;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.725);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.424);
+}
+
+.card-left__name{
+    text-align: center;
+    font-size: 2rem;
+    max-width: 8rem;
+    font-weight: 700;
+    border-bottom: solid rgba(255, 255, 255, 0.725);
+    padding-bottom: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.card-left__profesion{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.card-left__bottom{
+    position: absolute;
+    bottom: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.725);
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.card-left__links{
+    width: 1.7rem;
+    transition: transform 0.5s ease;
+}
+
+.card-left__links:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width:750px){
+    .card-left__container{
+        
+        width: 50%;
+        max-width: 27rem;
+        margin-top: 0rem;
+        padding-bottom:0rem;
+        height: 70vh;
+        max-height: 34rem;
+    }
+
+    .card-left__top-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    #card-left__image{
+        width: 11rem;
+    }
+
+    .card-left__name{
+        margin-top: 1.5rem;
+        font-size: 2.3rem;
+        max-width: 17rem;
+        font-weight: 700;
+        padding-bottom: 1.1rem;
+        
+    }
+
+    .card-left__profesion{
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-top: 1.1rem;
+    }
+
+    .card-left__bottom{
+        position: relative;
+        bottom: -2rem;
+        height: 5rem;
+
+    }
+
+    .card-left__links{
+        width: 2.3rem;
+    }
+}

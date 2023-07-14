@@ -23,7 +23,7 @@ function CurriculumTitle({ title }) {
   }, [])
 
   return (
-    <div className={`curriculum__title-div ${isIntersecting ? "mostrar-title" : "hidden-title"}`} ref={elementoRef}>
+    <div className={`curriculum__title-div ${isIntersecting ? "mostrar-title" : "hidden-title-div"}`} ref={elementoRef}>
       <h1 className="curriculum__title">{title}</h1>
     </div>
   );
